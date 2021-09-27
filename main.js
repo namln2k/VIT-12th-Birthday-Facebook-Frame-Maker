@@ -29,8 +29,8 @@ function uploadFile(event) {
 
             frameUrl = "./frames/frame" + finalSize + ".png"
 
-            $("#frame").attr("src", frameUrl);
             $("#frame").css("visibility", "visible");
+            $("#frame").attr("src", frameUrl);
         };
     }
 
