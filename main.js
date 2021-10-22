@@ -1,6 +1,9 @@
 // Size of the final image
 var finalSize;
 
+// If the final size can't be determined, it's default value will be set to 1200
+finalSize = 1200;
+
 // Frame URL that is suitable for the user's file (400px, 800px, 1200px, 1600px, 2000px)
 var frameUrl;
 
