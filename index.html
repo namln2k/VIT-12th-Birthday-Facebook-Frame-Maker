@@ -1,42 +1,46 @@
 <!DOCTYPE html>
 
 <html>
+  <head>
+    <title>VIT Frame Maker</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.5/croppie.min.js"></script>
+    <script src="https://unpkg.com/merge-images"></script>
+    <script src="main.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.5/croppie.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <title>VIT Frame Maker</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.5/croppie.min.js"></script>
-  <script src="https://unpkg.com/merge-images"></script>
-  <script src="main.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.5/croppie.min.css" />
-  <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-  <h1 class="text-center">VIT Frame Maker</h1>
-  <div id="about">
-    <p class="text-italic">
-      Hướng dẫn: Nhấn "Choose File"/"Chọn tệp" để tải ảnh lên và căn chỉnh, sau đó nhấn "Download" để tải
-      ảnh về
-      <br>
-      Lưu ý:  Up file có định dạng .jpg, .jpeg, .png ... Chất lượng ảnh tốt nhất trong khoảng: 400px - 2000px
-      <br>
-      <span>&emsp;&emsp;&emsp;</span>Ủng hộ mình bằng cách vote sao cho repo và github cá nhân nhé: <a style="text-decoration: underline;" href="https://github.com/namln2k/VIT_Frame_Maker">Github-namln2k</a>
-    </p>
-  </div>
-  <div id="content">
-    <div class="function">
-      <input type="file" id="upload-file" onchange="uploadFile(event)">
-      <button onclick="confirmFile()">Download</button>
+  <body>
+    <h1 class="text-center">VIT Frame Maker</h1>
+    <div id="about">
+      <p class="text-italic">
+        Hướng dẫn: Nhấn "Choose File"/"Chọn tệp" để tải ảnh lên và căn chỉnh,
+        sau đó nhấn "Download" để tải ảnh về
+        <br />
+        Lưu ý: Up file có định dạng .jpg, .jpeg, .png ... Chất lượng ảnh tốt
+        nhất trong khoảng: 400px - 2000px
+        <br />
+        <span>&emsp;&emsp;&emsp;</span>Ủng hộ mình bằng cách vote sao cho repo
+        và github cá nhân nhé:
+        <a target="blank" href="https://github.com/namln2k/VIT_Frame_Maker"
+          >Github-namln2k</a
+        >
+      </p>
     </div>
-    <div id="preview">
-      <img src="#" id="frame">
-      <img src="#" id="profile-pic" style="display: none">
+    <div id="content">
+      <div class="function">
+        <input type="file" id="upload-file" onchange="uploadFile(event)" />
+        <button onclick="confirmFile()">Download</button>
+      </div>
+      <div id="preview">
+        <img src="#" id="frame" />
+        <img src="#" id="profile-pic" style="display: none" />
+      </div>
     </div>
-  </div>
-  <div class="footer text-italic">
-    Phần mềm khum bản quyền :v
-  </div>
-</body>
-
+    <div class="footer text-italic">Phần mềm khum bản quyền :v</div>
+  </body>
 </html>
