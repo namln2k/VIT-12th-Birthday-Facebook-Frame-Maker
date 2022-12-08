@@ -53,6 +53,7 @@ function confirmFile() {
             var a = $("<a>")
                 .attr("href", b64)
                 .attr("download", "img.png")
+                .css("visibility", "hidden")
                 .appendTo("body");
             a[0].click();
             a.remove();
